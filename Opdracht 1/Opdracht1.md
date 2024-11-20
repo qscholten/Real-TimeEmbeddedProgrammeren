@@ -40,3 +40,6 @@
 **Door gebruik van children en parent processen wordt de tijd benodigd voor het uitvoeren van het programma minstens gehalveerd.**
 
 ### Deel B
+-
+
+### Deel C
