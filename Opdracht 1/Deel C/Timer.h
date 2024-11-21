@@ -1,3 +1,6 @@
+#ifndef TIMER_H
+#define TIMER_H
+
 
 #include <chrono>
 #include <ostream>
@@ -20,3 +23,5 @@ class Timer {
             high_resolution_clock::time_point _start;
             high_resolution_clock::time_point _stop;
 };
+
+#endif // TIMER_H

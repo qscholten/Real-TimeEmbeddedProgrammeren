@@ -13,3 +13,5 @@ class Werker {
     private:
         static queue<char> buffer;
 };
+
+#endif WERKER
