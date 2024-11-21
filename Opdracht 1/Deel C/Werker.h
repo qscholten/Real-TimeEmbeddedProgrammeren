@@ -1,3 +1,6 @@
+#ifndef WERKER
+#define WERKER
+
 #include <queue>
 
 using namespace std;
