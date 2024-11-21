@@ -14,4 +14,4 @@ class Werker {
         static queue<char> buffer;
 };
 
-#endif WERKER
+#endif // WERKER
