@@ -31,18 +31,21 @@ int main() {
          case(0):
             for (int j = 0; j < 8; j++) {
                write(fd[1], "p", 1);
+               usleep(10);
             }
             break;
          //child 2
          case(1):
             for (int j = 0; j < 8; j++) {
                write(fd[1], "a", 1);
+               usleep(10);
             }
             break;
          //child 3
          case(2):
             for (int j = 0; j < 8; j++) {
                write(fd[1], "b", 1);
+               usleep(10);
             }
             break;
       }

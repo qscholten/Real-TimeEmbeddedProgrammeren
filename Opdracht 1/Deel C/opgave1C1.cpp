@@ -17,10 +17,11 @@ int main() {
   thread t3(doeIets, 'b', 15, 8);
   thread t4(doeIets, 'c', 20, 8);
 
-  t1.join();
-  t2.join();
-  t3.join();
-  t4.join();
+  //t1.join();
+  //t2.join();
+  //t3.join();
+  //t4.join();
+  usleep(10000000);
 
   tm1.Stop();
   cout<<tm1.deTijd()<<"  "<<tm1.deNtijd()<<endl;

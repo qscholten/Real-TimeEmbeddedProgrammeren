@@ -14,7 +14,7 @@ void Werker::plaatsIets(char c, int aantal) {
 
 void Werker::haalIets(int aantal) {
     for (int i = 0; i< aantal; i++) {
-        while (buffer.empty()){}
+        while (buffer.empty());
         char c = buffer.front();
         buffer.pop();
         cout<<c<<endl;

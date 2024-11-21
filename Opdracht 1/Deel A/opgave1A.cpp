@@ -32,7 +32,7 @@ int main() {
    }
   }
   //parent 
-  doeIets('c',20,8);
+  doeIets('c',10,8);
 
   tm1.Stop();
   cout<<tm1.deTijd()<<"  "<<tm1.deNtijd()<<endl;
@@ -45,7 +45,7 @@ void doeIets(char c,unsigned int tijd,unsigned int aantal) {
    
    for(int i=0;i<aantal;++i) {
      	cout<<c<<flush;       //flush leeg output buffer (print direct)
-        //usleep(100000*tijd);
+        usleep(100000*tijd);
     }
         cout<<endl;
 	
