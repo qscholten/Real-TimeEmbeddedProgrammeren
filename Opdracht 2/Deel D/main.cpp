@@ -46,5 +46,15 @@ int main(int argc, const char * argv[]) {
     }
     cout<<endl;
 
+    /*
+    std::cout << "Hello, IoT "<<vw2.hetResultaat()<<endl;
+    vector<int> ts2=vw2.deTussenstanden();
+
+    for(auto i:ts2) {
+        cout<<i <<" ";
+    }
+    cout<<endl;
+    */
+
     return 0;
 }

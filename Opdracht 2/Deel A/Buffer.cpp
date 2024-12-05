@@ -14,9 +14,9 @@ using namespace std;
 void Buffer::zetInBuf(int d) {
     //usleep(10);
     while (teller == GROOTTE);
+    m1.lock();
     opslag[in++]=d;
     in %=GROOTTE;
-    m1.lock();
     teller++;
     m1.unlock();
 }
@@ -25,9 +25,9 @@ int Buffer::haalUitBuf() {
     int waarde;
     //usleep(10);
     while(teller==0);
+    m1.lock();
     waarde=opslag[out++];
     out %=GROOTTE;
-    m1.lock();
     teller--;
     m1.unlock();
     return waarde;

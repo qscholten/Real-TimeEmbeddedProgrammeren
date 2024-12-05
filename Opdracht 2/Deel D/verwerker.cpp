@@ -36,5 +36,7 @@ void Verwerker::verwerkData() {
         std::this_thread::sleep_for(std::chrono::nanoseconds(rd));
         result += temp;
     }
+    m1.lock();
     tussenstanden.push_back(result);
+    m1.unlock();
 }

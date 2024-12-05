@@ -14,12 +14,10 @@ using namespace std;
 void Buffer::zetInBuf(int d) {
     leeg.acquire();
 
+    m1.lock();
     opslag[in++]=d;
     cout<<"teller zetInBuf "<<teller<<endl;
-
     in %=GROOTTE;
-
-    m1.lock();
     teller++;
     m1.unlock();
     
@@ -30,12 +28,10 @@ int Buffer::haalUitBuf() {
     vol.acquire();
     int waarde;
 
+    m1.lock();
     waarde=opslag[out++];
     cout<<"teller haalUitbuf "<<teller<<endl;
-
     out %=GROOTTE;
-
-    m1.lock();
     teller--;
     m1.unlock();
     

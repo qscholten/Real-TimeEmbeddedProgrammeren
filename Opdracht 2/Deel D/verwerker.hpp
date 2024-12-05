@@ -29,5 +29,6 @@ private:
     Buffer *buf;
     static atomic<int> result;
     bool status;
+    mutex m1;
 };
 #endif /* verwerker_hpp */
